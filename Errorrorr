@@ -1,0 +1,77 @@
+
+ 
+Executing Gradle task: runClient 
+Build info: MCreator 2021.3.53117, forge-1.17.1, 64-bit, 32717 MB, Windows 10, JVM 16.0.2, JAVA_HOME: C:\Program Files\Pylo\MCreator\jdk 
+  
+> Configure project : 
+The code of this workspace uses official obfuscation mappings provided by Mojang. These mappings fall under their associated license you should be fully aware of. 
+(c) 2020 Microsoft Corporation. These mappings are provided "as-is" and you bear the risk of using them. You may copy and use the mappings for development purposes, 
+but you may not redistribute the mappings complete and unmodified. Microsoft makes no warranties, express or implied, with respect to the mappings provided here. 
+Use and modification of this document or the source code (in any form) of Minecraft: Java Edition is governed by the Minecraft End User License Agreement available 
+at https://account.mojang.com/documents/minecraft_eula. 
+  
+> Task :compileJava UP-TO-DATE 
+> Task :processResources UP-TO-DATE 
+> Task :classes UP-TO-DATE 
+> Task :downloadMcpConfig 
+> Task :extractSrg UP-TO-DATE 
+> Task :createSrgToMcp UP-TO-DATE 
+> Task :downloadMCMeta UP-TO-DATE 
+> Task :downloadAssets UP-TO-DATE 
+> Task :extractNatives UP-TO-DATE 
+> Task :makeSrcDirs 
+> Task :prepareRuns 
+> Task :prepareRunClient 
+> Task :runClient FAILED 
+00:24.21 [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.17, --assetsDir, C:\Users\mrcra\.mcreator\gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 37.1.1, --fml.mcVersion, 1.17.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20210706.113038] 
+00:24.21 [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher 9.0.17+9.0.17+main.3e5b8360 starting: java version 16.0.2 by Eclipse Foundation 
+00:24.21 [main/DEBUG] [LaunchServiceHandler/MODLAUNCHER]: Found launch services [fmlclientdev,forgeclient,minecraft,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness] 
+00:24.21 [main/DEBUG] [NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp] 
+00:24.21 [main/DEBUG] [LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,object_holder_definalize,runtime_enum_extender,capability_token_subclass,capability_inject_definalize,accesstransformer,runtimedistcleaner] 
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "joptsimple.OptionSet.valueOf(joptsimple.OptionSpec)" because "this.optionSet" is null 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.ArgumentHandler.lambda$setArgs$0(
+ArgumentHandler.java:46
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.ArgumentHandler.lambda$setArgs$0(ArgumentHandler.java:46) 
+   at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(
+ConcurrentHashMap.java:1708
+   at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.api.TypesafeMap.computeIfAbsent(
+TypesafeMap.java:52
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.api.TypesafeMap.computeIfAbsent(TypesafeMap.java:52) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.api.TypesafeMap.computeIfAbsent(
+TypesafeMap.java:47
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.api.TypesafeMap.computeIfAbsent(TypesafeMap.java:47) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.Environment.computePropertyIfAbsent(
+Environment.java:67
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.Environment.computePropertyIfAbsent(Environment.java:67) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.ArgumentHandler.setArgs(
+ArgumentHandler.java:46
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.ArgumentHandler.setArgs(ArgumentHandler.java:46) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.Launcher.run(
+Launcher.java:85
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.Launcher.run(Launcher.java:85) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.Launcher.main(
+Launcher.java:77
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.Launcher.main(Launcher.java:77) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(
+BootstrapLaunchConsumer.java:26
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) 
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(
+BootstrapLaunchConsumer.java:23
+   at MC-BOOTSTRAP/cpw.mods.modlauncher@9.0.17/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) 
+   at cpw.mods.bootstraplauncher@0.1.17/cpw.mods.bootstraplauncher.BootstrapLauncher.main(
+BootstrapLauncher.java:90
+   at cpw.mods.bootstraplauncher@0.1.17/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:90) 
+FAILURE: Build failed with an exception. 
+* What went wrong: 
+Execution failed for task ':runClient'. 
+> Process 'command 'C:\Program Files\Pylo\MCreator\jdk\bin\java.exe'' finished with non-zero exit value 1 
+* Try: 
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights. 
+* Get more help at https://help.gradle.org 
+BUILD FAILED in 2s 
+10 actionable tasks: 3 executed, 7 up-to-date 
+  
+BUILD FAILED 
+Task completed in 2 seconds 
+  
